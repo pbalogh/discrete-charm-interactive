@@ -31,7 +31,14 @@ function ExceptionHandler({ fireRate, isActive, consensusCount }) {
         <div className="fire-rate-bar">
           <div
             className="fire-rate-fill"
-            style={{ width: `${fireRate}%` }}
+            style={{
+              width: `${fireRate}%`,
+              backgroundColor: fireRate <= 10
+                ? '#22c55e'
+                : fireRate <= 50
+                  ? `rgb(${Math.round(34 + (234 - 34) * ((fireRate - 10) / 40))}, ${Math.round(197 + (179 - 197) * ((fireRate - 10) / 40))}, ${Math.round(94 + (8 - 94) * ((fireRate - 10) / 40))})`
+                  : `rgb(${Math.round(234 + (239 - 234) * ((fireRate - 50) / 50))}, ${Math.round(179 + (68 - 179) * ((fireRate - 50) / 50))}, ${Math.round(8 + (68 - 8) * ((fireRate - 50) / 50))})`
+            }}
           ></div>
         </div>
       </div>

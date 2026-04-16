@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import TokenSelector from './components/TokenSelector'
 import ConsensusVoting from './components/ConsensusVoting'
 import CrossoverChart from './components/CrossoverChart'
@@ -10,6 +10,14 @@ import './App.css'
 function App() {
   const [selectedTokenIndex, setSelectedTokenIndex] = useState(null)
   const [currentExample, setCurrentExample] = useState(0)
+  const vizRef = useRef(null)
+
+  const handleTokenSelect = (idx) => {
+    setSelectedTokenIndex(idx)
+    setTimeout(() => {
+      vizRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+    }, 50)
+  }
 
   const example = sampleData[currentExample]
   const tokenData = selectedTokenIndex !== null
@@ -24,7 +32,7 @@ function App() {
           How transformer MLPs use consensus mechanisms to decide when nonlinearity matters
         </p>
         <p className="byline">
-          Peter Balogh • <a href="https://arxiv.org/abs/..." target="_blank">Paper on arXiv</a>
+          Peter Balogh • <a href="https://arxiv.org/abs/2603.10985" target="_blank">Paper on arXiv</a>
         </p>
       </header>
 
@@ -37,11 +45,11 @@ function App() {
         <TokenSelector
           tokens={example.tokens}
           selectedIndex={selectedTokenIndex}
-          onSelect={setSelectedTokenIndex}
+          onSelect={handleTokenSelect}
         />
 
         {tokenData && (
-          <div className="visualization-grid">
+          <div className="visualization-grid" ref={vizRef}>
             <div className="consensus-section">
               <h3>Consensus Voting</h3>
               <p className="section-description">
@@ -94,7 +102,7 @@ function App() {
 
       <footer>
         <p>
-          Built with React + D3 • <a href="https://github.com/yourusername/linearization">Source</a>
+          Built with React + D3 • <a href="https://github.com/pbalogh/discrete-charm-interactive">Source</a>
         </p>
       </footer>
     </div>

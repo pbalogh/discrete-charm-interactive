@@ -423,7 +423,7 @@ export const sampleData = [
   },
   {
     "id": "example-1",
-    "title": "Example 2",
+    "title": "Zero Consensus Example",
     "sentence": "However, the situation remains unclear.",
     "tokens": [
       {
@@ -432,53 +432,8 @@ export const sampleData = [
         "consensusNeurons": [
           {
             "id": 2,
-            "fires": true,
-            "activation": 0.52
-          },
-          {
-            "id": 762,
-            "fires": true,
-            "activation": 0.6
-          },
-          {
-            "id": 2361,
-            "fires": true,
-            "activation": 0.6
-          },
-          {
-            "id": 2460,
-            "fires": true,
-            "activation": 2.58
-          },
-          {
-            "id": 2928,
-            "fires": true,
-            "activation": 1.74
-          },
-          {
-            "id": 1831,
-            "fires": true,
-            "activation": 1.36
-          },
-          {
-            "id": 2727,
-            "fires": true,
-            "activation": 1.47
-          }
-        ],
-        "consensusCount": 7,
-        "exceptionFires": false,
-        "exceptionFireRate": 0.4,
-        "mlpOutput": 216.3
-      },
-      {
-        "text": ",",
-        "position": 1,
-        "consensusNeurons": [
-          {
-            "id": 2,
-            "fires": true,
-            "activation": 2.51
+            "fires": false,
+            "activation": 0.05
           },
           {
             "id": 762,
@@ -487,34 +442,79 @@ export const sampleData = [
           },
           {
             "id": 2361,
-            "fires": true,
-            "activation": 0.65
+            "fires": false,
+            "activation": 0.06
           },
           {
             "id": 2460,
-            "fires": true,
-            "activation": 0.32
+            "fires": false,
+            "activation": 0.09
           },
           {
             "id": 2928,
-            "fires": true,
-            "activation": 0.18
+            "fires": false,
+            "activation": 0.07
           },
           {
             "id": 1831,
             "fires": false,
-            "activation": -0.01
+            "activation": 0.04
           },
           {
             "id": 2727,
-            "fires": true,
-            "activation": 0.86
+            "fires": false,
+            "activation": 0.06
           }
         ],
-        "consensusCount": 5,
-        "exceptionFires": false,
-        "exceptionFireRate": 3.1,
-        "mlpOutput": 82.2
+        "consensusCount": 0,
+        "exceptionFires": true,
+        "exceptionFireRate": 91.2,
+        "mlpOutput": 192.7
+      },
+      {
+        "text": ",",
+        "position": 1,
+        "consensusNeurons": [
+          {
+            "id": 2,
+            "fires": true,
+            "activation": 0.96
+          },
+          {
+            "id": 762,
+            "fires": true,
+            "activation": 0.92
+          },
+          {
+            "id": 2361,
+            "fires": false,
+            "activation": 0.05
+          },
+          {
+            "id": 2460,
+            "fires": false,
+            "activation": 0.08
+          },
+          {
+            "id": 2928,
+            "fires": false,
+            "activation": 0.09
+          },
+          {
+            "id": 1831,
+            "fires": true,
+            "activation": 0.73
+          },
+          {
+            "id": 2727,
+            "fires": false,
+            "activation": 0.07
+          }
+        ],
+        "consensusCount": 3,
+        "exceptionFires": true,
+        "exceptionFireRate": 14.1,
+        "mlpOutput": 88.0
       },
       {
         "text": " the",
@@ -523,43 +523,43 @@ export const sampleData = [
           {
             "id": 2,
             "fires": true,
-            "activation": 2.28
+            "activation": 0.95
           },
           {
             "id": 762,
-            "fires": false,
-            "activation": -0.12
+            "fires": true,
+            "activation": 0.89
           },
           {
             "id": 2361,
             "fires": true,
-            "activation": 0.49
+            "activation": 0.74
           },
           {
             "id": 2460,
             "fires": true,
-            "activation": 0.36
+            "activation": 0.91
           },
           {
             "id": 2928,
             "fires": true,
-            "activation": 0.4
+            "activation": 0.87
           },
           {
             "id": 1831,
-            "fires": false,
-            "activation": -0.13
+            "fires": true,
+            "activation": 0.79
           },
           {
             "id": 2727,
             "fires": true,
-            "activation": 0.42
+            "activation": 0.83
           }
         ],
-        "consensusCount": 5,
+        "consensusCount": 7,
         "exceptionFires": false,
-        "exceptionFireRate": 3.1,
-        "mlpOutput": 69.7
+        "exceptionFireRate": 0.4,
+        "mlpOutput": 74.6
       },
       {
         "text": " situation",
@@ -568,43 +568,43 @@ export const sampleData = [
           {
             "id": 2,
             "fires": true,
-            "activation": 1.71
+            "activation": 0.88
           },
           {
             "id": 762,
             "fires": false,
-            "activation": -0.15
+            "activation": 0.09
           },
           {
             "id": 2361,
-            "fires": true,
-            "activation": 0.8
+            "fires": false,
+            "activation": 0.08
           },
           {
             "id": 2460,
-            "fires": true,
-            "activation": 0.68
+            "fires": false,
+            "activation": 0.11
           },
           {
             "id": 2928,
             "fires": true,
-            "activation": 0.88
+            "activation": 0.91
           },
           {
             "id": 1831,
             "fires": false,
-            "activation": -0.11
+            "activation": 0.12
           },
           {
             "id": 2727,
-            "fires": true,
-            "activation": 0.53
+            "fires": false,
+            "activation": 0.09
           }
         ],
-        "consensusCount": 5,
-        "exceptionFires": false,
-        "exceptionFireRate": 3.1,
-        "mlpOutput": 89.7
+        "consensusCount": 2,
+        "exceptionFires": true,
+        "exceptionFireRate": 33.4,
+        "mlpOutput": 101.0
       },
       {
         "text": " remains",
@@ -613,43 +613,43 @@ export const sampleData = [
           {
             "id": 2,
             "fires": true,
-            "activation": 1.13
+            "activation": 0.9
           },
           {
             "id": 762,
             "fires": false,
-            "activation": -0.05
+            "activation": 0.07
           },
           {
             "id": 2361,
-            "fires": true,
-            "activation": 1.51
+            "fires": false,
+            "activation": 0.06
           },
           {
             "id": 2460,
             "fires": true,
-            "activation": 1.52
+            "activation": 0.89
           },
           {
             "id": 2928,
-            "fires": true,
-            "activation": 0.78
+            "fires": false,
+            "activation": 0.11
           },
           {
             "id": 1831,
             "fires": false,
-            "activation": -0.15
+            "activation": 0.1
           },
           {
             "id": 2727,
             "fires": true,
-            "activation": 1.47
+            "activation": 0.81
           }
         ],
-        "consensusCount": 5,
-        "exceptionFires": false,
-        "exceptionFireRate": 3.1,
-        "mlpOutput": 72.2
+        "consensusCount": 3,
+        "exceptionFires": true,
+        "exceptionFireRate": 14.1,
+        "mlpOutput": 88.0
       },
       {
         "text": " unclear",
@@ -658,43 +658,43 @@ export const sampleData = [
           {
             "id": 2,
             "fires": true,
-            "activation": 1.59
+            "activation": 0.86
           },
           {
             "id": 762,
             "fires": false,
-            "activation": 0.1
+            "activation": 0.08
           },
           {
             "id": 2361,
-            "fires": true,
-            "activation": 0.56
+            "fires": false,
+            "activation": 0.09
           },
           {
             "id": 2460,
-            "fires": true,
-            "activation": 0.37
+            "fires": false,
+            "activation": 0.1
           },
           {
             "id": 2928,
             "fires": true,
-            "activation": 0.14
+            "activation": 0.9
           },
           {
             "id": 1831,
-            "fires": true,
-            "activation": 0.3
+            "fires": false,
+            "activation": 0.11
           },
           {
             "id": 2727,
-            "fires": true,
-            "activation": 0.54
+            "fires": false,
+            "activation": 0.08
           }
         ],
-        "consensusCount": 6,
-        "exceptionFires": false,
-        "exceptionFireRate": 1.2,
-        "mlpOutput": 75.5
+        "consensusCount": 2,
+        "exceptionFires": true,
+        "exceptionFireRate": 33.4,
+        "mlpOutput": 101.0
       },
       {
         "text": ".",
@@ -703,43 +703,43 @@ export const sampleData = [
           {
             "id": 2,
             "fires": true,
-            "activation": 2.16
+            "activation": 0.97
           },
           {
             "id": 762,
-            "fires": false,
-            "activation": -0.16
+            "fires": true,
+            "activation": 0.93
           },
           {
             "id": 2361,
-            "fires": true,
-            "activation": 1.32
+            "fires": false,
+            "activation": 0.05
           },
           {
             "id": 2460,
             "fires": true,
-            "activation": 0.4
+            "activation": 0.9
           },
           {
             "id": 2928,
             "fires": true,
-            "activation": 0.53
+            "activation": 0.86
           },
           {
             "id": 1831,
-            "fires": false,
-            "activation": -0.02
+            "fires": true,
+            "activation": 0.81
           },
           {
             "id": 2727,
             "fires": true,
-            "activation": 0.69
+            "activation": 0.84
           }
         ],
-        "consensusCount": 5,
+        "consensusCount": 6,
         "exceptionFires": false,
-        "exceptionFireRate": 3.1,
-        "mlpOutput": 100.5
+        "exceptionFireRate": 1.2,
+        "mlpOutput": 76.2
       }
     ]
   },
