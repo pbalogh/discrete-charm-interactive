@@ -2,7 +2,7 @@
 
 **Interactive visualization** demonstrating how transformer MLP layers use consensus mechanisms to decide when nonlinearity matters.
 
-🔗 **[Live Demo](https://pabalogh.github.io/discrete-charm-mlp/)** (once deployed)
+🔗 **[Live Demo](https://pbalogh.github.io/discrete-charm-interactive/)**
 
 Based on the research paper: **"The Discrete Charm of the MLP"** by Peter Balogh.
 
