@@ -64,7 +64,7 @@ function App() {
             <div className="exception-section">
               <h3>Exception Handler</h3>
               <p className="section-description">
-                When consensus breaks down, neuron 2123 fires:
+                When consensus breaks down, neuron 2123 lights up — a diagnostic indicator, not a causal trigger:
               </p>
               <ExceptionHandler
                 fireRate={tokenData.exceptionFireRate}

@@ -52,36 +52,38 @@ function ExceptionHandler({ fireRate, isActive, consensusCount }) {
         )}
         {consensusCount >= 5 && consensusCount < 7 && (
           <p>
-            <strong>Strong consensus.</strong> Most neurons agree. N2123 rarely fires here
+            <strong>Strong consensus.</strong> Most neurons agree. N2123 rarely activates here
             — only {fireRate.toFixed(1)}% of the time.
           </p>
         )}
         {consensusCount >= 3 && consensusCount < 5 && (
           <p>
-            <strong>Moderate disagreement.</strong> Neurons are split. N2123 fires
-            {fireRate.toFixed(1)}% of the time to handle the ambiguity.
+            <strong>Moderate disagreement.</strong> Neurons are split. N2123 activates
+            {fireRate.toFixed(1)}% of the time — indicating the nonlinear pathway is engaged.
           </p>
         )}
         {consensusCount >= 1 && consensusCount < 3 && (
           <p>
-            <strong>Low consensus.</strong> Most neurons disagree. N2123 fires
+            <strong>Low consensus.</strong> Most neurons disagree. N2123 activates
             {fireRate.toFixed(1)}% of the time — the MLP is working hard.
           </p>
         )}
         {consensusCount === 0 && (
           <p>
-            <strong>Zero consensus!</strong> Complete disagreement. N2123 fires {fireRate.toFixed(1)}% of the time
-            — this token is deeply ambiguous and needs the full nonlinear circuit.
+            <strong>Zero consensus!</strong> Complete disagreement. N2123 activates {fireRate.toFixed(1)}% of the time
+            — signaling that this token needs the full nonlinear circuit.
           </p>
         )}
       </div>
 
       <div className="mechanism">
-        <h4>The Exception Handler Mechanism</h4>
+        <h4>The Indicator Mechanism</h4>
         <p>
-          Neuron 2123 is 96-98% mutually exclusive with the 7 default neurons.
+          Neuron 2123 is 93–98% mutually exclusive with the 7 default neurons.
           When they all fire (consensus), it stays silent. When they disagree
-          (no consensus), it fires — triggering the full nonlinear MLP machinery.
+          (no consensus), it activates. But N2123 is diagnostic, not causal —
+          zeroing it alone has no measurable effect. The computation is distributed
+          across all 3,072 neurons; N2123 is a reliable readout of which regime is active.
         </p>
       </div>
     </div>
