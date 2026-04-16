@@ -1,0 +1,73 @@
+.token-selector {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 2px solid #e5e5e5;
+  margin: 1.5rem 0;
+}
+
+.tokens {
+  font-family: 'Source Code Pro', 'Menlo', monospace;
+  font-size: 1.2rem;
+  line-height: 2.5;
+  user-select: none;
+}
+
+.token {
+  display: inline-block;
+  padding: 0.4rem 0.6rem;
+  margin: 0.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.token.high-consensus {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.token.medium-consensus {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.token.low-consensus {
+  background: #fed7aa;
+  color: #9a3412;
+}
+
+.token.zero-consensus {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.token:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.token.selected {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  font-weight: 600;
+}
+
+.token.hovered:not(.selected) {
+  border-color: #94a3b8;
+}
+
+.token-info {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.token-info strong {
+  color: #1e293b;
+  font-weight: 600;
+}

@@ -1,0 +1,108 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.byline {
+  margin-top: 1rem;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.interactive-section {
+  margin-top: 3rem;
+}
+
+.visualization-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.consensus-section,
+.exception-section,
+.crossover-section {
+  background: #fafafa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+
+.crossover-section {
+  grid-column: 1 / -1;
+}
+
+.section-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.example-buttons {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #f0f8ff;
+  border-radius: 8px;
+}
+
+.example-buttons h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.example-buttons button {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.example-buttons button:hover {
+  background: #1d4ed8;
+}
+
+footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .visualization-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .crossover-section {
+    grid-column: 1;
+  }
+
+  .example-buttons button {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+}

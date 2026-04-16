@@ -1,0 +1,153 @@
+.exception-handler {
+  transition: all 0.4s ease;
+  padding: 1.5rem;
+}
+
+.exception-handler.inactive {
+  opacity: 0.7;
+}
+
+.exception-handler.active {
+  background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+  border-radius: 8px;
+}
+
+.exception-handler.pulse .neuron-circle {
+  animation: pulse-animation 0.6s ease-out;
+}
+
+@keyframes pulse-animation {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 20px rgba(239, 68, 68, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}
+
+.neuron-display {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.neuron-circle {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  border: 4px solid #cbd5e1;
+  background: white;
+}
+
+.exception-handler.active .neuron-circle {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  border-color: #991b1b;
+  box-shadow: 0 0 30px rgba(239, 68, 68, 0.5);
+}
+
+.neuron-id {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: 'Source Code Pro', monospace;
+  color: #64748b;
+  transition: color 0.4s ease;
+}
+
+.exception-handler.active .neuron-id {
+  color: white;
+}
+
+.status-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94a3b8;
+  transition: color 0.4s ease;
+}
+
+.exception-handler.active .status-label {
+  color: #991b1b;
+}
+
+.fire-rate-display {
+  margin: 1.5rem 0;
+}
+
+.fire-rate-label {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+.fire-rate-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0369a1;
+  margin-bottom: 0.5rem;
+}
+
+.exception-handler.active .fire-rate-value {
+  color: #dc2626;
+}
+
+.fire-rate-bar {
+  height: 12px;
+  background: #e5e5e5;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.fire-rate-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e 0%, #ef4444 100%);
+  transition: width 0.6s ease;
+  border-radius: 6px;
+}
+
+.explanation {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: white;
+  border-radius: 6px;
+  border-left: 4px solid #94a3b8;
+}
+
+.exception-handler.active .explanation {
+  border-left-color: #ef4444;
+  background: #fef2f2;
+}
+
+.explanation p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.mechanism {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.mechanism h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #475569;
+}
+
+.mechanism p {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+}

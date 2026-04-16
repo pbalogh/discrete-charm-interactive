@@ -1,0 +1,73 @@
+.crossover-chart svg {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.chart-explanation {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-radius: 8px;
+  border-left: 4px solid #f59e0b;
+}
+
+.chart-explanation h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #92400e;
+  font-size: 1.2rem;
+}
+
+.chart-explanation p {
+  color: #78350f;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.chart-explanation ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 1rem 0;
+}
+
+.chart-explanation li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: #78350f;
+}
+
+.blue-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #2563eb;
+  flex-shrink: 0;
+}
+
+.red-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ef4444;
+  flex-shrink: 0;
+}
+
+.chart-explanation .punchline {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #92400e;
+  margin-bottom: 0;
+}
+
+.chart-explanation strong {
+  font-weight: 600;
+  color: #92400e;
+}

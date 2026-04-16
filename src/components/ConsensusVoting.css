@@ -1,0 +1,59 @@
+.consensus-voting {
+  position: relative;
+}
+
+.consensus-count {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-radius: 8px;
+}
+
+.consensus-count .count {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0369a1;
+  display: inline-block;
+}
+
+.consensus-count .label {
+  font-size: 1rem;
+  color: #0c4a6e;
+  margin-left: 0.5rem;
+}
+
+.consensus-voting svg {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-color {
+  width: 20px;
+  height: 12px;
+  border-radius: 3px;
+}
+
+.legend-color.firing {
+  background: #22c55e;
+}
+
+.legend-color.silent {
+  background: #94a3b8;
+}
